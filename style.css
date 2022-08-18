@@ -1,0 +1,21 @@
+body{
+        box-sizing: border-box;
+    }
+            
+ul{
+    list-style: none;           
+} 
+
+ul article{
+            float: left;
+            padding: 10px 10px;
+            display: block;
+            border-spacing: 0.2px;
+            width: 250px;
+            }
+
+figcaption h3{
+    text-align: justify;
+    
+}
+
