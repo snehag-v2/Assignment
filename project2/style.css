@@ -19,20 +19,10 @@
     margin:auto;
     display:flex;
     align-items: center;
+    background-color: #FFF;
        
 }
-.logo{
-    width: 15px;
-    cursor: pointer;
-    
-}
 
-.icon{
-    width: 15px;
-    cursor: pointer;
-    align-items: center;
-    
-}
 nav{
     flex: 1;
     padding-left: 20px;
@@ -43,7 +33,19 @@ nav li{
     display:inline-block;
     list-style:none;
     margin: 0px 20px;
-    color:rgb(30, 30, 32)
+    color:grey;
+}
+.navbar-1 i{
+    color: #FFF;
+}
+.navbar-2 i{
+    color: black;
+}
+.nav-right span{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .box{
     border: 10px;
@@ -54,6 +56,16 @@ nav li{
    
 
 } 
+.navbar-2 h2{
+    color: orangered;
+}
+.navbar-2 button{
+    color: orangered;
+    align-content: center;
+    justify-content: center;
+    border: 5px solid orangered;
+    background-color: white;
+}
 .container{
     height: 100vh;
     width: 100%;
@@ -62,82 +74,411 @@ nav li{
     background-size: cover;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 20%;
     box-sizing: border-box;
-    position: relative;
+    
 }
 
 
 .content{
     margin-left: 20%;
     margin-right: 20%;
-    color: beige;
+    color: white;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  monospace;
     text-align: center;
-       
+    
 }
 
 .field{
     align-items: center;    
-    text-align: center;
+    justify-content: center;
+       
 }
-.field btn1{
-        position:relative;
-        
+.field button{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: -500px;
+    margin-right: -20px;
+    position: relative;
 }
 .content fieldset{
-    height: fit-content;
-    width: fit-content;
+    height: auto;
+    width: 100%;
+    
+} 
+
+/* form section*/
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+    width:15%;
+  }
+  
+  .f-container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 10px;
+    
+  }
+  
+  input[type=submit] {
+    background-color: orangered;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  /* link*/
+ #l-container {
+    
+    
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    /* just for demo */
+    width:100%;
+    padding:2%;
+    align-items: center;
+    
+  } 
+
+  
+
+  .row{
+    display: grid;
+  height: 300px;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-left: 15px;
+  
+  }
+
+  .row .box{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  border: 1px solid rgb(143, 141, 141);
+  border-spacing: 15px;
+  }
+
+.box i{
+    border: 1px solid rgb(143, 141, 141);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    flex: 1px;
+    width: 20px;
+    margin-left: 10px;
+    color:orangered;
+}
+  
+.box h2{
+    display: flex;
+    width: 250px;
+    font-size: 20px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.box p{
+    display: flex;
+    width: 250px;
+    font-size: 20px;
 }
 
-#volunteer{
+#about , #cause, #gallery{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding:40px;
     border-bottom: 1px solid rgb(37, 34, 34);
+    
 }
-
-.vol-container{
+.gal{
+    margin: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.gly{
+    
+    align-content: center;
+}
+.adt-text li{
+    list-style: none;
+}
+.cause-container{
     display:flex;
     justify-content: center;
     align-items: center;
     margin:20px 0px;
     flex-wrap:wrap;
+
 }
 
-.vol-box{
+
+
+.cause-img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.cause-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: relative;
+       
+}
+.cause-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.cause-text h3,p{
+    align-content: center;
+    text-align: center;
+}
+
+.cause-text ul{
+    list-style: none;
+}
+
+.cause-text .bar{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: antiquewhite;
+    border-radius: 2px;
+    height: 2px;
+    width: 290px;
+}
+.cause-box{
     width: 350px;
     background-color: white;
-    border: 1px solid rgb(48, 43, 43);
     margin:20px;
-    float: left;
+}
+ 
+ .bar{
+    background: orangered;
+    width: px;
+    height:5px;
+    border-radius: 5px; 
+ }
+ 
+ .bar .progress1{
+    height: 3px;
+    border-radius: 2px;
+    width: 40%;
+    background-color: orangered;     
+ }
+
+ .bar .progress2{
+    height: 3px;
+    border-radius: 2px;
+    width: 60%;
+    background-color: orangered;     
+ }
+
+ .bar .progress3{
+    height: 3px;
+    border-radius: 2px;
+    width: 80%;
+    background-color: orangered;    
+ }
+ 
+ .bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: orangered;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#gallery img{
+    width: 100px;
+    height: 5vh;
+    transition: all;
+}
+#volunteer{
+    padding: 4rem 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+
+/*#volunteer h4{
+border-bottom: 2px solid orangered;
+display: inline-block;
+padding-bottom: 20px;
+font-size: 25px;
+}
+
+#volunteer h4{
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem  
+} */
+
+.vol-class{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px;
+    flex-wrap:wrap;
+    margin-top: 5%;
+}
+.vol-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-left: 10px;
+    gap: 20px;
 }
 
 .vol-img{
-    width: 100%;
-    height: auto;
+    width:14rem;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     align-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 15px 20px 15px 20px;
+    margin:2rem 0;    
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+}
+
+.img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    margin-top: -5rem;
+
 
 }
-.vol-icon{
+.vol-container h1{
+    font-size: 20px;
+    color:#333;
+    margin:1.5rem 0;
+    margin-bottom: 0.4rem;
+
+}
+
+.vol-container p{
+    margin-bottom:2rem;
+}
+
+
+.vol-icons{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1,5rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+}
+
+.vol-icons i{
+    font-size: 1rem;
+    color: grey;
+}
+
+#footer{
+    width: 100%;
+    color: white;
     
-    display:inline-block;
-    margin: 0px 20px;
-    padding: 20px;
-    flex: 2px;
 }
-.vol-icon ul li{
-    list-style:none;
-    display: inline-block;
-    margin: 0 20px;
-}
-.vol-img h3{
-    text-align: center;
-    margin-right:35%;
+
+.sec-1{
+    list-style: none;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    display: flex;
     
 }
+.foot, .tags{
+    width: 20%;
+    height: 150px;
+    padding: 5px;
+}
+
+.tags button{
+    border:1px solid white;
+    background-color: black;
+    color:#f1f1f1;
+    width: fit-content;
+    height: 30px;
+    padding: 10px;
+    align-content: center;
+    
+}
+.foot li{
+    border-bottom:1px solid #f1f1f1;
+    
+}
+.sec-2{
+    list-style: none;
+    flex-direction: column;
+    background-color: orangered;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 50px;
+    
+}
+.sec-2 button{
+    border:1px solid #FFF;
+    color: #fff;
+    background-color: transparent;
+    width: 150px;
+    height: 30px;
+}
+
+.sec-2 label,input{
+    width: 350px;
+    height: 30px;
+}
+#footer p{
+    background-color: #000;
+    color: white;
+}
+ 
+div u{
+    text-decoration-color: orangered;
+    padding:10px 0;
+} 
+
+
