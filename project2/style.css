@@ -22,6 +22,16 @@
     background-color: #FFF;
        
 }
+.nav-left{
+    padding-left:15%;
+    
+
+}
+.nav-rightt{
+    padding-left:15%;
+    
+    
+}
 
 nav{
     flex: 1;
@@ -32,11 +42,13 @@ nav{
 nav li{
     display:inline-block;
     list-style:none;
-    margin: 0px 20px;
+    margin: 10px 10px;
     color:grey;
+    padding: 5px;
 }
 .navbar-1 i{
     color: #FFF;
+    padding: 5px;
 }
 .navbar-2 i{
     color: black;
@@ -113,15 +125,22 @@ nav li{
 form {
     border: 3px solid #f1f1f1;
     font-family: Arial;
-    width:15%;
-  }
-  
+    width:30%;
+    
+}
+ 
+.form-position{
+    
+    padding-top: 5px;
+    float: left;
+    margin-top: -10%;
+}
   .f-container {
     padding: 20px;
     background-color: #f1f1f1;
   }
   
-  input[type=text], input[type=submit] {
+  input[id=fname], input[id=email], input[id=submit] {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
@@ -129,19 +148,18 @@ form {
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
-  
-  input[type=checkbox] {
-    margin-top: 10px;
-    
+  label[for=remember]{
+    color:orangered;
+    margin-left:2px;
   }
   
-  input[type=submit] {
+  input[id=submit] {
     background-color: orangered;
     color: white;
     border: none;
   }
   
-  input[type=submit]:hover {
+  input[id=submit]:hover {
     opacity: 0.8;
   }
 
@@ -154,7 +172,7 @@ form {
     text-justify: distribute-all-lines;
     /* just for demo */
     width:100%;
-    padding:2%;
+    padding-top:9%;
     align-items: center;
     
   } 
@@ -166,68 +184,95 @@ form {
   height: 300px;
   align-content: space-evenly;
   grid-template-columns: auto auto auto;
-  gap: 5px;
+  gap: 2px;
   background-color: rgba(255, 255, 255, 0.8);
   margin-left: 15px;
+  margin-left: 10%;
+  margin-bottom: 5%;
   
   }
 
   .row .box{
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 80%;
+    background-color: #FFF;
+    width: 400px;
+    height: 150px;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
   font-size: 20px;
   border: 1px solid rgb(143, 141, 141);
-  border-spacing: 15px;
+  border-spacing: 10px;
+  margin-bottom: 5%;
   }
 
 .box i{
     border: 1px solid rgb(143, 141, 141);
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    display: flex;
-    flex: 1px;
+    padding: 15px;
+    float: left;
     width: 20px;
     margin-left: 10px;
     color:orangered;
 }
   
-.box h2{
-    display: flex;
-    width: 250px;
-    font-size: 20px;
-    align-items: center;
-    flex-direction: column;
-    
-}
-.box p{
-    display: flex;
-    width: 250px;
-    font-size: 20px;
+
+   
+
+.box .box-text{
+    float: right;
+    padding:5px;
+    margin-right: 5px;
+    background-color: #FFF;
+    width: 300px; 
+    font-size: 20px;   
 }
 
-#about , #cause, #gallery{
+.box:hover{
+    border-color:orangered ;
+}
+
+.box i:hover{
+    background-color: orangered;
+    color:white;
+}
+#about{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:40px;
-    border-bottom: 1px solid rgb(37, 34, 34);
+    padding:60px;
+    background-color: rgb(224, 221, 221);
+    position: static;
     
 }
-.gal{
-    margin: 5px;
-  border: 1px solid #ccc;
-  width: 100%;
-}
-.gly{
+#cause{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:60px;
     
-    align-content: center;
+    position: static;
+    
 }
-.adt-text li{
+.abt-text img{
+    padding-top: 20px;
+}
+.abt-left{
+    float:left;
     list-style: none;
+    width: 350px;
+    margin-top: 3%;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.abt-right{
+    float:right;
+    list-style: none;
+    width: 350px;
+    margin-top: 3%;
+    padding-left: 20px;
 }
 .cause-container{
     display:flex;
@@ -280,10 +325,16 @@ form {
     background-color: white;
     margin:20px;
 }
- 
+
+.c-left{
+    float: left;
+}
+.c-right{
+    float:right;
+}
  .bar{
     background: orangered;
-    width: px;
+    width: 300px;
     height:5px;
     border-radius: 5px; 
  }
@@ -315,23 +366,43 @@ form {
     border-radius: 50%;
     background: orangered;
     float: right;
-    margin-top: -15px;
+    margin-top: -20px;
     margin-right: -20px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
 }
- 
-#gallery img{
-    width: 100px;
-    height: 5vh;
-    transition: all;
+#gallery{
+    
+    justify-content: center;
+    align-items: center;
+    
+    padding:40px;
+    border-bottom: 1px solid rgb(37, 34, 34);
+    position: relative;
+    flex: 1px;
+}
+.gallery-img{
+    width: 100%;
+    height: 500px;
+    border:1px dashed black;
+    display:flex;
+    flex-direction:row;
+}
+.img1 img{
+    width:300px;
+    object-fit:cover ;
+}
+.img2 img{
+    width:300px;
+    object-fit:cover ;
 }
 #volunteer{
     padding: 4rem 0;
     background-color: #f1f1f1;
     text-align: center;
+    position:static;
 }
 
 
@@ -434,7 +505,13 @@ font-size: 25px;
     height: 150px;
     padding: 5px;
 }
-
+.tags{
+    display: grid;
+  align-content: space-evenly;
+  grid-template-columns: auto auto;
+  gap: 2px;
+  margin-left: 5px;
+}
 .tags button{
     border:1px solid white;
     background-color: black;
@@ -456,30 +533,37 @@ font-size: 25px;
     width: 100%;
     align-content: center;
     justify-content: center;
-    padding: 10px 50px;
-    
-}
-.sec-2 button{
-    border:1px solid #FFF;
-    color: #fff;
-    background-color: transparent;
-    width: 150px;
-    height: 30px;
+    padding: 12px;
+    padding-left: 20px;
 }
 
-.sec-2 label,input{
-    width: 350px;
-    height: 30px;
+.sec-2 a{
+    color:#fff;
+    font-weight: 10px;
+    text-decoration: none;
 }
+
 #footer p{
     background-color: #000;
     color: white;
 }
- 
+ .foot-right{
+    padding-left: 20px;
+ }
+
+ .foot-right button{
+    width: 50%;
+    padding-right: 5px;
+ }
+
+ .foot-right .active{
+    border: 1px solid orangered ;
+  color: orangered;
+ }
 div u{
     text-decoration-color: orangered;
     padding:10px 0;
 } 
 
 
-assignment updating...
+assignment updating still...

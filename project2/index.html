@@ -13,8 +13,8 @@
             <header class="header">
                 <div class="navbar-1">
                     <nav class="nav-left">
-                        <li><i class="fa fa-phone">+123-456-7890</i></li>
-                        <li><i class="fa fa-envelope">info@gmail.com</i></li>
+                        <li style="color:white;"><i class="fa fa-phone"></i>+123-456-7890</li>
+                        <li style="color:white;"><i class="fa fa-envelope"></i>info@gmail.com</li>
                     </nav>
                     <nav class="nav-right">
                         <ul>
@@ -55,59 +55,71 @@
         
             </header>
         </section>
-        <hr />
+        
         
         <section>
                 <div>
-                
-                    <form action="/action_page.php">
-                        <div class="f-container" style="background-color:white">
-                            <label><input type="text"  placeholder="Full name" name="name" required></label>
-                            <label><input type="text"  placeholder="info@gmail.com" name="mail" required></label>                        
-                            <label><input type="checkbox" checked="checked" name="subscribe"> Remember me</label>
-                            <label><input type="submit" value="SUBMIT"></label>
-                      </div>                   
-                    </form>
-                    
-                    <div id="l-container">
-                        <div class="row">
-                            <div class="box">
-                                <i class="fa fa-wrench" aria-hidden="true"></i>
-                                <h2>Lnteractive Elements</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
-                            </div>
-                            <div class="box">
-                                <i class="fa fa-heartbeat" aria-hidden="true"></i>
-                                <h2>Donate</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
-                            </div>
-                            <div class="box">
-                                <i class="fa fa-usd" aria-hidden="true"></i>
-                                <h2>Donate</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
-                            </div>
-                            <div class="box">
-                                <i class="fa fa-heartbeat" aria-hidden="true"></i>
-                                <h2>Contribute</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
-                            </div>
-                            <div class="box">
-                                <i class="fa fa-heartbeat" aria-hidden="true"></i>
-                                <h2>Participate</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
-                            </div>
-                            <div class="box">
-                                <i class="fa fa-heartbeat" aria-hidden="true"></i>
-                                <h2>Lnteractive Elements</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
+                    <div class="form-position">
+                        <form action="/action_page.php">
+                            <div class="f-container" style="background-color:white">
+                                <label  for="fname">Name<br /><input type="text" id="fname" placeholder="Full name" name="name" required></label>
+                                <label for="email">Username or Email<input type="text" id="email" placeholder="info@gmail.com" name="mail" required></label>                        
+                                <input type="checkbox" id="remember" name="" value=""><label for="remember">Remember Me</label><br />
+                                <label><input type="submit" id="submit" value="SUBMIT"></label>
+                        </div>                   
+                        </form>
+                        
+                    </div>  <br/>  
+                        <div id="l-container">
+                            <div class="row">
+                                <div class="box">
+                                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                    <div class="box-text">
+                                        <h2>Lnteractive Elements</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                    <div class="box-text">
+                                        <h2>Donate</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                    <div class="box-text">
+                                        <h2>Donate</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                    <div class="box-text">
+                                        <h2>Contribute</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                    <div class="box-text">
+                                        <h2>Participate</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                    <div class="box-text">
+                                        <h2>Lnteractive Elements</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eisum temper incidident.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                     </div>
-                    
-                </div>
-        </section>
-<hr />
-
+                        
+                    </div>
+            </section>
+    
             <!-- About us -->
         <section id="about">
             <h2>ABOUT US</h2>
@@ -115,32 +127,32 @@
             <p>Charixty is the charity, Non-profit government organization, fundraising. Our<br /> activities help entrepreneurs get the target</p>
             
             <div class="abt">
-                <div class="abt-text">            
-                    <ul>
-                        <li>
+                <div class="abt-text">
+                    <div class="abt-left">            
+                        <li class="donation">
                             <h4>DONATION</h4>
                             <p>Vision is our mission. Restoring vision to people in developing nations is ou cause. We are a non-pr local physicians.</p><br /><br />
                         </li>
-                        <li>
+                        <li class="fundrise">
                             <h4>FUNDRISE</h4>
                             <p>Vision is our mission. Restoring vision to people in developing nations is ou cause. We are a non-pr local physicians.</p><br /><br />
                         </li>
-                    </ul>
+                    </div>
                     <img src="images/about.jpg">
-                    <ul>
-                        <li>
+                    <div class="abt-right">            
+                        <li class="scholarship">
                             <h4>SCHOLARSHIP</h4>
                             <p>Vision is our mission. Restoring vision to people in developing nations is ou cause. We are a non-pr local physicians.</p><br /><br />
                         </li>
-                        <li>
+                        <li class="volunteer">
                             <h4>VOLUNTEER</h4>
                             <p>Vision is our mission. Restoring vision to people in developing nations is ou cause. We are a non-pr local physicians.</p>
                         </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <hr />
+        
         <!-- OUR CAUSES -->
         <section id="cause">
             
@@ -208,40 +220,43 @@
                             <div class="html"><span>80%</span></div>
                         </div> 
                         <br />                 
-                        <ul>
-                            <li><h3>Donated</h3>
-                                <p>$100.00</p></li>
-                                
-                            <li><h3>Goal</h3>
-                                <p>$2,500.00</p></li>
-                        </ul>
+                        <div class="c-left">
+                            <h3>Donated</h3>
+                            <p>$100.00</p>
+                        </div>
+                        <div class="c-right">        
+                            <h3>Goal</h3>
+                                <p>$2,500.00</p>
+                        </div>
                     </div>
                 </div>        
             </div>
         </section>
-<hr />
+
         
      <!--                   OUR GALLERY PAGE-->
         <section id="gallery">
             <h2>OUR GALLERY</h2>
-            <img src="icons/logo.png" alt="icon">
+                     icon here
             <p>Charixty is the charity, Non-profit government organization, fundraising. Our<br /> activities help entrepreneurs get the target</p>
             
-            <div class="gal">
-                <div class="gly"><img src="images/gallery-1.jpg" alt="" ></div>
-                <div class="gly"><img src="images/gallery-2.jpg" alt="" ></div>
-                <div class="gly"><img src="images/gallery-3.jpg" alt="" ></div>
-                <div class="gly"><img src="images/gallery-4.jpg" alt="" ></div>
-                <div class="gly"><img src="images/gallery-5.jpg" alt="" ></div>
-                <div class="gly"><img src="images/gallery-6.jpg" alt="" ></div>
+            <div class="gallery-img">
+                <div class="img1">    
+                    <img src="images/gallery-1.jpg">
+                </div>
+                <div class="img2">    
+                    <img src="images/gallery-2.jpg">
+                    <img src="images/gallery-3.jpg">
+                </div>
+                
                 
             </div>
         </section>
-        <hr />
+       
         <!-- OUR VOLUNTEER-->
         <section id="volunteer">
             
-            <h2><u style="text-decoration-color: red; padding-top: 10px;">OUR VOLUNTEER</u></h2>
+            <h2><u style="text-decoration-color: green; padding-top: -10px;">OUR VOLUNTEER</u></h2>
             <p>Charixty is the charity, Non-profit government organization, fundraising. Our<br /> activities help entrepreneurs get the target.</p>
               
             <div class="vol-class">
@@ -299,7 +314,7 @@
             </div>
 
         </section>
-        <hr />
+        
         <!-- footer section-->
         <section id="footer">
             <div class="sec-1">
@@ -336,14 +351,12 @@
                     <button input type="" name="">Recycle</button>
                 </div>
             </div>
-            <div class="sec-2">
-                <div class="subscribe">
+            <div class="sec-2">                
+                <a href="#default">Sign Up For Our Newsletter</a>
+                <div class="foot-right">
+                    <a href="#contact"><button>Enter your E-mail</button></a>
+                    <a class="subcribes" href="#donate">SUBCRIBES NOW</a>
                     
-                    <form action="" method="post">
-                        <label for="Signup">Sign Up For Our Newsletter</label>
-                            <input type="email" name="email" required="required" placeholder="Enter your E-mail" />
-                            <button>SUBCRIBES NOW</button>
-                        </form>
                 </div>
             </div>
             <p>Copyright 2017 All Right Reserved</p>
