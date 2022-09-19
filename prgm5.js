@@ -57,4 +57,14 @@ function removeDuplicates(str) {
 
  values.forEach((e,o)=>{removeDuplicates(e)!==expected[o]?(console.error("\n\n------- Failed -------"),console.error(`Test: ${e}`),console.error(`Result: ${removeDuplicates(e)}`),console.error(`Expected: ${expected[o]}`)):(console.log("\n\n------- Success -------"),console.log(`Test: ${e}`),console.log(`Result: ${removeDuplicates(e)}`))});
 
+// without using loop removeDuplicates
 
+let s = "'belle', 'candy', 'distributed', '113', 'Test' ,'T!esT!', ' money ', 'test apples', '$$%^*&','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet metus et sodales dapibus. Fusce sodales in odio sit amet ornare. Proin suscipit elit at dui ornare molestie. Suspendisse congue finibus tellus, vel gravida lacus auctor non. Aliquam odio ex, venenatis vel pellentesque eu, cursus vel est. Etiam elementum ante odio, ac venenatis massa consequat ac. Pellentesque malesuada porta risus eget aliquam. Praesent suscipit ut justo tempus vehicula. Praesent hendrerit libero eu pharetra ornare. Sed nisi leo, laoreet vel dictum sed, finibus quis sem.";
+function removeDuplicates(s) {
+    var h={}; 
+    return s.split("").
+      map(function(c){h[c] |= 0; h[c]++; return c}).
+      filter(function(c){return h[c] == 1}).
+      join("");
+   }
+console.log(removeDuplicates(s))  
