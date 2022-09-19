@@ -41,7 +41,7 @@ function removeDuplicates(str) {
       charCount = {},
       newStr = [];
     for (var i = 0; i < len; i++) {
-      char = str[i];
+      char = str[i].toLOwerCase();
       if (charCount[char]) {
         charCount[char]++;
       } else charCount[char] = 1;
