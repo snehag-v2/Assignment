@@ -87,6 +87,20 @@ console.log(stack1.peek());
 console.log(stack1.isEmpty());
 console.log(stack1.printStack());
 
+// USING ARRAY 
+
+function Stack(){
+  var x = Array.prototype;   // or var x =[];
+  return x;
+}
+
+let stack1  = Stack ();
+stack1.push("item 0");
+stack1.push("item 1");
+stack1.pop();
+
+console.log(stack1);
+
 
 
 
