@@ -9,6 +9,22 @@ function arr(num){
  console.log(arr(a));
  console.log("\t");
 
+// without division
+
+ function fn(ary) {
+    return ary.map(ele => {
+      return ary.reduce((acc, val) => {
+        if (val !== ele) {
+          acc = acc * val;
+        }
+        return acc;
+      },1)
+    });
+  }
+  let st = [0,4,5]
+  console.log(fn(st));
+
+
 // Using Array.reduce method,  implement Array.map
 
 function mapfn(t,ar){
