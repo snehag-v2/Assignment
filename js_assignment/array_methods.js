@@ -102,27 +102,39 @@ console.log(arr2.concat1(3,4,5));
 console.log("\t");
 
 // Write a program to execute an array of promise in sequence?
-
-const promise1 = new Promise(function(res,_rej){
+    
+function promise1(){
+  return new Promise(function(res,rej){
     setTimeout(function(){
-        res("First promise")},1000);
-    });
+      console.log('resolve promise 1');
+      res();
+    },1000);
+  });
+}
 
-const promise2 = new Promise(function(res,rej){
+function promise2(){
+  return new Promise(function(res,rej){
     setTimeout(function(){
-        //rej("Second promise is rejected");
-        res("Second promise")},700);
-    });
+      console.log('resolve promise 2');
+      res();
+    },500);
+  });
+}
 
-const promise3 = new Promise(function(res,_rej){
+function promise3(){
+  return new Promise(function(res,rej){
     setTimeout(function(){
-        res("Third promise")},500);
-    });
+      console.log('resolve promise 3');
+      res();
+    },1700);
+  });
+}
 
-const promises = [promise1,promise2,promise3];
-
-Promise.all(promises)
-    .then(fn1 => console.log(fn1))
-    .catch(fn2 => console.log(fn2));
-
-
+let promises = [promise1,promise2,promise3];
+let seq;
+    
+for(let i in promises){
+  if(seq) seq = seq.then(promises[i]);
+  if(!seq) seq = promises[i]();
+}
+    
