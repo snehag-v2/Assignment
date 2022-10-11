@@ -1,0 +1,110 @@
+body{
+  background-color: rgb(80, 240, 80);
+}
+
+.taskpage{
+	display: flex;
+	width: 1000px;
+	flex-wrap: wrap;
+	margin: auto;
+	font-size: 16px;
+	border: solid 2px #f1f1f1;
+}
+
+.taskpage .inpdata{
+  width:30%;
+  padding:15px;
+}
+
+.taskpage .display_table {
+  padding: 15px;
+  width: 60%;
+  background-color: #f1f1f1;
+  color:black;
+  margin: 10px;
+}
+
+body > table{
+  width: 80%;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+table.list{
+  width:100%;
+}
+
+td, th {
+  border: 2px solid #85eb71;
+  text-align: left;
+  padding: 8px;
+}
+table.list thead>tr {
+  background-color: #249b0c;
+  color: white;
+}
+
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  width: 30%;
+  background-color: orange;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form div.form-action-buttons{
+  text-align: right;
+}
+
+.fa-trash-o:before {
+  content: "\f014";
+  margin-left: 15px;
+  cursor: pointer;
+  color: blue;
+}
+
+label.validation-error{
+  color:   red;
+  margin-left: 5px;
+}
+
+.hide{
+  display:none;
+}
+
+.list th {
+  cursor: pointer;
+}
+
+.list .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.list .th-sort-desc::after {
+  content: "\25be";
+}
+
+.list .th-sort-asc::after,
+.list .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.list .th-sort-asc,
+.list .th-sort-desc {
+  background: rgba(0, 0, 0, 0.1);
+}
