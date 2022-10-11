@@ -1,8 +1,8 @@
-var selectedRow = null
+let selectedRow = null
 
 function onFormSubmit() {
     if (validate()) {
-        var inpdata = readinpdata();
+        let inpdata = readinpdata();
         if (selectedRow == null)
             insertNewtask(inpdata);
         else
@@ -12,16 +12,16 @@ function onFormSubmit() {
 }
 
 function readinpdata() {
-    var inpdata = {};
+    let inpdata = {};
     inpdata["taskName"] = document.getElementById("taskName").value;
     return inpdata;
 }
 
 function insertNewtask(data) {
-    var table = document.getElementById("taskList").getElementsByTagName('tbody')[0];
-    var newRow = table.insertRow(table.length);
+    let table = document.getElementById("taskList").getElementsByTagName('tbody')[0];
+    let newRow = table.insertRow(table.length);
     cell1 = newRow.insertCell(0);
-    var totalRowCount = document.getElementById("taskList tr")
+    let totalRowCount = document.getElementById("taskList tr")
     cell1.innerHTML = table.rows.length-1;
     cell2 = newRow.insertCell(1);
     cell2.innerHTML = data.taskName;
