@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Sort table Assignment
+    </title>
+    <link rel="stylesheet" href="sort_table.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="taskpage"> 
+        <div class="inpdata">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <h2>ADD TASKS</h2><label class="validation-error hide" id="taskNameValidationError">Enter the valid task name!!</label>
+                        <input type="text" name="taskName" id="taskName" placeholder="Enter your task here!!">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+        </div>
+        <div class="display_table">
+            <table class="list" id="taskList">
+                <thead>
+                    <tr>
+                        <th>SL.no</th>
+                        <th>Task Name</th>
+                        <th>Date and time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- elements here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="sort.js"></script>
+     -->
+    <script src="sort_table.js"></script>
+</body>
+
+</html>

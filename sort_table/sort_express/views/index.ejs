@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Sort table Assignment
+    </title>
+    <link rel="stylesheet" href="table.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="taskpage"> 
+        <div class="inpdata">
+            <form class="item" action="/addtask/" method="post">
+                    <div>
+                        <h2>ADD TASKS</h2>
+                        <input type="text" name="taskName" id="input" placeholder="Enter your task here!!">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <button class="btn" type="submit" name="addbutton">Submit</button>
+                    </div>
+                </form>
+        </div>
+        <div class="display_table">
+            <table class="list" id="taskList">
+                <thead>
+                    <tr>
+                        <th>SL.no<i class="fa fa-sort-asc" ></i><i class="fa fa-sort-desc" ></i></th>
+                        <th>Task Name<i class="fa fa-sort-asc" ></i><i class="fa fa-sort-desc" ></i></th>
+                        <th>Date and time <i class="fa fa-sort-asc" ></i><i class="fa fa-sort-desc" ></i></th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- elements here -->
+                    <% for( let i = 0; i < newListItems.length; i++ ) { %>
+                    <tr class="item">
+                        <td><%= i+1%></td>
+                        <td><%=  newListItems[i].taskname%></td>
+                        <td><%= newListItems[i].date%></td>
+                        <td>
+                            <form action="/removetask/<%=  newListItems[i].taskname %>" method="post">
+                                <button class="delbtn" type="submit" name="remove"><i class="fa fa-trash-o"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+
+</html>
